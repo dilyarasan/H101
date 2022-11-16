@@ -9,8 +9,8 @@ window = tk.Tk()
 window.title('Calculator-GeeksForGeeks')
 frame = tk.Frame(master=window, bg="skyblue", padx=10)
 frame.pack()
-entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=3, width=30)
-entry.grid(row=1, column=9, columnspan=2, ipady=2, pady=2)
+entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=9, width=30)
+entry.grid(row=5, column=0, columnspan=2, ipady=6, pady=0)
  
  
 def myclick(number):
@@ -31,19 +31,19 @@ def clear():
  
  
 button_1 = tk.Button(master=frame, text='1', padx=15,
-                     pady=5, width=3, command=lambda: myclick(1))
+                     pady=9, width=3, command=lambda: myclick(1))
 button_1.grid(row=2, column=8, pady=1)
 button_2 = tk.Button(master=frame, text='2', padx=15,
-                     pady=5, width=3, command=lambda: myclick(2))
+                     pady=9, width=3, command=lambda: myclick(2))
 button_2.grid(row=1, column=1, pady=2)
 button_3 = tk.Button(master=frame, text='3', padx=15,
-                     pady=5, width=3, command=lambda: myclick(3))
+                     pady=9, width=3, command=lambda: myclick(3))
 button_3.grid(row=1, column=2, pady=2)
 button_4 = tk.Button(master=frame, text='4', padx=15,
-                     pady=5, width=3, command=lambda: myclick(4))
+                     pady=9, width=3, command=lambda: myclick(4))
 button_4.grid(row=2, column=0, pady=2)
 button_5 = tk.Button(master=frame, text='5', padx=15,
-                     pady=5, width=3, command=lambda: myclick(5))
+                     pady=9, width=3, command=lambda: myclick(5))
 button_5.grid(row=2, column=1, pady=2)
 button_6 = tk.Button(master=frame, text='6', padx=15,
                      pady=5, width=3, command=lambda: myclick(6))
